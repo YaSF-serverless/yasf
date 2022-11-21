@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "commonjs",
+    "lib": [
+      "es2018"
+    ],
+    "alwaysStrict": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "stripInternal": true,
+    "baseUrl": ".",
+    "moduleResolution": "node"
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "bin"]
+}

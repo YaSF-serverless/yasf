@@ -1,0 +1,34 @@
+{
+  "name": "aws-lambda-benchmark-yasf-example",
+  "version": "0.1.0",
+  "main": "main.js",
+  "types": "main.ts",
+  "scripts": {
+    "build": "yarn compile",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "deploy": "yarn build && npx yasf deploy",
+    "requirements": "pip install -r src/requirements.txt && pip install -r src/requirements-local.txt --no-cache-dir"
+  },
+  "engines": {
+    "node": ">= 14.17.0"
+  },
+  "dependencies": {
+    "cdktf": "^0.12.2",
+    "constructs": "^10.0.25"
+  },
+  "devDependencies": {
+    "@yasf/cdktf-aws-resolver": "^0.1.0",
+    "@yasf/cdktf-gcp-resolver": "^0.1.0",
+    "@yasf/core": "^0.1.0",
+    "@types/node": "^14.14.30",
+    "aws-cdk-lib": "2.0.0",
+    "typescript": "^4.1.5"
+  },
+  "yasf": {
+    "resolvers": [
+      "@yasf/cdktf-gcp-resolver",
+      "@yasf/cdktf-aws-resolver"
+    ]
+  }
+}
