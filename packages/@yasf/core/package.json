@@ -1,0 +1,81 @@
+{
+  "name": "@yasf/core",
+  "version": "0.1.0",
+  "description": "YaSF serverless framework core library",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./": "./lib/"
+  },
+  "scripts": {
+    "prepare": "yarn build && husky install",
+    "build": "tsc",
+    "commit-msg": "npx --no -- commitlint --edit \"$1\"",
+    "generate-barrels": "barrelsby --delete -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaSF-serverless/yasf.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "cdk",
+    "iac",
+    "serverless"
+  ],
+  "author": "Mikael Giacomini",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/YaSF-serverless/yasf/issues"
+  },
+  "homepage": "https://github.com/YaSF-serverless/yasf#readme",
+  "dependencies": {
+    "constructs": "^10.0.25",
+    "cosmiconfig": "^7.0.1",
+    "resolve-from": "^5.0.0",
+    "yargs": "^17.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/npm": "^9.0.0",
+    "@types/node": "^17.0.8",
+    "barrelsby": "^2.3.2",
+    "husky": "^7.0.0",
+    "semantic-release": "^19.0.3",
+    "typescript": "^4.5.4"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
+  "bin": {
+    "yasf": "./lib/cli.js"
+  }
+}
