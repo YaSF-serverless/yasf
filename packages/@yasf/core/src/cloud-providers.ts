@@ -5,7 +5,7 @@ const resolveFrom = require('resolve-from');
 
 let resolvers: { [name: string]: any } = {};
 
-const CONFIG_NAME = 'multicloud';
+const CONFIG_NAME = 'yasf';
 
 function loadResolver(name: string) {
     const resolvedPath = resolveFrom.silent(__dirname, name)
