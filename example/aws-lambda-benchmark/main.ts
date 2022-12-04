@@ -16,7 +16,7 @@ class ExampleStack extends GenericStack {
             location: "2",
         })
 
-        const db = new GenericNoSQLDatabase(this, "products-db", {
+        const productsDb = new GenericNoSQLDatabase(this, "products-db", {
             primaryKey: "sku",
         })
 
@@ -36,7 +36,7 @@ class ExampleStack extends GenericStack {
             functionAssets: functionAssets,
             entrypoint: name,
             envVariables: {
-                "PRODUCTS_TABLE": db.name,
+                "PRODUCTS_TABLE": productsDb.name,
             }
         })
 
