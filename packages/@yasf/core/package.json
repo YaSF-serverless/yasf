@@ -1,6 +1,6 @@
 {
   "name": "@yasf/core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "YaSF serverless framework core library",
   "main": "./lib/index.js",
   "files": [
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YaSF-serverless/yasf.git"
+    "url": "git@github.com:YaSF-serverless/yasf.git"
   },
   "keywords": [
     "cdk",
@@ -66,12 +66,6 @@
             "package.json"
           ],
           "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-        }
-      ],
-      [
-        "@semantic-release/github",
-        {
-          "successComment": false
         }
       ]
     ]
