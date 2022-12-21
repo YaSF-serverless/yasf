@@ -1,5 +1,5 @@
 {
-  "name": "@yasf/cdktf-aws-resolver",
+  "name": "@yasf-serverless/cdktf-aws-resolver",
   "version": "0.1.0",
   "main": "./lib/index.js",
   "repository": {
@@ -23,7 +23,7 @@
   "dependencies": {
     "@cdktf/provider-aws": "^9.0.52",
     "@cdktf/provider-generator": "^0.12.3",
-    "@yasf/core": "^0.1.0",
+    "@yasf-serverless/core": "^0.1.0",
     "@npmcli/ci-detect": "^1.4.0",
     "cdktf": "^0.12.2",
     "cdktf-cli": "0.13.1",
@@ -44,9 +44,6 @@
     "husky": "^7.0.0",
     "semantic-release": "^19.0.3",
     "typescript": "^4.5.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "release": {
     "branches": [

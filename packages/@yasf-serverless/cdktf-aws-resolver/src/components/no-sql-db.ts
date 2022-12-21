@@ -1,6 +1,6 @@
 import { DynamodbTable } from "@cdktf/provider-aws/lib/dynamodb";
 import { IamPolicy, IamRolePolicyAttachment } from "@cdktf/provider-aws/lib/iam";
-import { GenericNoSQLDatabaseConfig, IGenericGrantable } from "@yasf/core";
+import { GenericNoSQLDatabaseConfig, IGenericGrantable } from "@yasf-serverless/core";
 import { Construct } from "constructs";
 
 const writeReadRolePolicy = {

@@ -1,4 +1,4 @@
-import { GenericFunctionConfig, IGenericFunction, RUNTIMES } from "@yasf/core";
+import { GenericFunctionConfig, IGenericFunction, RUNTIMES } from "@yasf-serverless/core";
 import { Construct } from "constructs";
 import { LambdaFunction, LambdaFunctionConfig, LambdaFunctionUrl } from "@cdktf/provider-aws/lib/lambdafunction";
 import { IamRole, IamRolePolicyAttachment } from "@cdktf/provider-aws/lib/iam";

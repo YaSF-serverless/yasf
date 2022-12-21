@@ -1,5 +1,5 @@
 {
-  "name": "@yasf/core",
+  "name": "@yasf-serverless/core",
   "version": "0.1.0",
   "description": "YaSF serverless framework core library",
   "main": "./lib/index.js",
@@ -26,7 +26,7 @@
     "serverless"
   ],
   "author": "Mikael Giacomini",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/YaSF-serverless/yasf/issues"
   },
@@ -77,6 +77,10 @@
     ]
   },
   "bin": {
-    "yasf": "./lib/cli.js"
+    "yasf": "lib/cli.js"
+  },
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
   }
 }

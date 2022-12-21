@@ -1,4 +1,4 @@
-import { GenericFunctionConfig, IGenericFunction, RUNTIMES } from "@yasf/core";
+import { GenericFunctionConfig, IGenericFunction, RUNTIMES } from "@yasf-serverless/core";
 import { Construct } from "constructs";
 import {
     CloudfunctionsFunction,

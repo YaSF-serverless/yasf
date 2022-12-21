@@ -1,0 +1,21 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          cache: yarn
+          node-version: 16
+          scope: "@yasf"
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      # Will be enabled once reached version 1.0.0
+      # - run: yarn semantic-release
+      #   env:
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
