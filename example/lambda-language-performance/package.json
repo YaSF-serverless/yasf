@@ -18,17 +18,17 @@
     "constructs": "^10.0.25"
   },
   "devDependencies": {
-    "@yasf/cdktf-aws-resolver": "^0.1.0",
-    "@yasf/cdktf-gcp-resolver": "^0.1.0",
-    "@yasf/core": "^0.1.0",
+    "@yasf-serverless/cdktf-aws-resolver": "^0.1.0",
+    "@yasf-serverless/cdktf-gcp-resolver": "^0.1.0",
+    "@yasf-serverless/core": "^0.1.0",
     "@types/node": "^14.14.30",
     "aws-cdk-lib": "2.0.0",
     "typescript": "^4.1.5"
   },
   "yasf": {
     "resolvers": [
-      "@yasf/cdktf-gcp-resolver",
-      "@yasf/cdktf-aws-resolver"
+      "@yasf-serverless/cdktf-gcp-resolver",
+      "@yasf-serverless/cdktf-aws-resolver"
     ]
   }
 }

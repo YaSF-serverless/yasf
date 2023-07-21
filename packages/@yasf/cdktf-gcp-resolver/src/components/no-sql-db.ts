@@ -1,6 +1,6 @@
 
 import { AppEngineApplication, DataGoogleAppEngineDefaultServiceAccount } from "@cdktf/provider-google";
-import { GenericNoSQLDatabaseConfig, IGenericGrantable, IGenericNoSQLDatabase } from "@yasf/core";
+import { GenericNoSQLDatabaseConfig, IGenericGrantable, IGenericNoSQLDatabase } from "@yasf-serverless/core";
 import { Construct } from "constructs";
 
 

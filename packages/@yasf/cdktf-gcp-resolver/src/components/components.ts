@@ -1,4 +1,4 @@
-import { Components } from "@yasf/core"
+import { Components } from "@yasf-serverless/core"
 import { GenericGCPProvider } from "./provider";
 import { GenericGoogleFunction } from "./function";
 import { App, TerraformStack } from "cdktf";

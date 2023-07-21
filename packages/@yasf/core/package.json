@@ -1,5 +1,5 @@
 {
-  "name": "@yasf/core",
+  "name": "@yasf-serverless/core",
   "version": "0.1.0",
   "description": "YaSF serverless framework core library",
   "main": "./lib/index.js",
