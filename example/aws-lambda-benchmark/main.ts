@@ -47,7 +47,7 @@ class ExampleStack extends GenericStack {
         const listProductsFunction = createFunction("list-products", "listProducts");
 
         [createProductFunction, getProductFunction, updateProductFunction, deleteProductFunction, listProductsFunction].forEach((functionInstance) => {
-            db.grantReadWriteAccess(functionInstance)
+            productsDb.grantReadWriteAccess(functionInstance)
         })
     }
 }
