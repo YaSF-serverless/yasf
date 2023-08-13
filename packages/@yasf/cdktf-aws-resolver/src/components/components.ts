@@ -1,4 +1,4 @@
-import { Components } from "@yasf/core"
+import { Components } from "@yasf-serverless/core"
 import { GenericAwsProvider } from "./provider";
 import { GenericLambdaFunction } from "./lambda";
 import { App, TerraformStack } from "cdktf";

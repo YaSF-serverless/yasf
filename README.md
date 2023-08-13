@@ -10,11 +10,11 @@ This framework defines agnostic infrastructure based on the [Constructs Programm
 
 To install the dependency, run:
 ```bash
-npm i @yasf/core
+npm i @yasf-serverless/core
 ```
 or for yarn:
 ```bash
-yarn add @yasf/core
+yarn add @yasf-serverless/core
 ```
 
 ## 2. Create your infrastructure
@@ -60,11 +60,11 @@ new ExampleStack(app, "example-stack");
 ## 3. Import a YaSF Resolver
 Add at least one YaSF resolver by first installing it:
 ```bash
-npm i @yasf/cdktf-aws-resolver
+npm i @yasf-serverless/cdktf-aws-resolver
 ```
 or for yarn:
 ```bash
-yarn add @yasf/cdktf-aws-resolver
+yarn add @yasf-serverless/cdktf-aws-resolver
 ```
 And then adding its name as a configuration item in your `package.json` to enable it:
 
@@ -72,7 +72,7 @@ And then adding its name as a configuration item in your `package.json` to enabl
   ...
   "yasf": {
     "resolvers": [
-      "@yasf/cdktf-aws-resolver"
+      "@yasf-serverless/cdktf-aws-resolver"
     ]
   },
   ...

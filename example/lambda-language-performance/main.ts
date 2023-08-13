@@ -4,7 +4,7 @@ import { Construct } from "constructs";
 import {
     CONTINENTS, COORDINATES, RUNTIMES, FunctionAssets, GenericFunction,
     GenericProvider, GenericStack, populateResolvers
-} from "@yasf/core"
+} from "@yasf-serverless/core"
 
 class ExampleStack extends GenericStack {
     constructor(scope: Construct, name: string) {

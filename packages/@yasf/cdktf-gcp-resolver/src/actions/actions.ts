@@ -1,4 +1,4 @@
-import { Actions } from "@yasf/core";
+import { Actions } from "@yasf-serverless/core";
 import { execute } from "./execute";
 
 export const ResolverActions: Actions = {

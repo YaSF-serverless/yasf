@@ -1,9 +1,9 @@
-import { FunctionAssets, GenericFunction, GenericNoSQLDatabase, GenericProvider, GenericStack, populateResolvers } from "@yasf/core"
+import { FunctionAssets, GenericFunction, GenericNoSQLDatabase, GenericProvider, GenericStack, populateResolvers } from "@yasf-serverless/core"
 import config from "./config/config";
 import { App } from "cdktf";
 import { Construct } from "constructs";
-import { CONTINENTS, COORDINATES } from "@yasf/core"
-import { RUNTIMES } from "@yasf/core"
+import { CONTINENTS, COORDINATES } from "@yasf-serverless/core"
+import { RUNTIMES } from "@yasf-serverless/core"
 
 class ExampleStack extends GenericStack {
     constructor(scope: Construct, name: string) {

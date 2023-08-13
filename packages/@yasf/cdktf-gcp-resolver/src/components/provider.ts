@@ -1,4 +1,4 @@
-import { CONTINENTS, COORDINATES, GenericProviderConfig } from "@yasf/core";
+import { CONTINENTS, COORDINATES, GenericProviderConfig } from "@yasf-serverless/core";
 import { Construct } from "constructs";
 import { GoogleProvider, GoogleProviderConfig } from "@cdktf/provider-google";
 
